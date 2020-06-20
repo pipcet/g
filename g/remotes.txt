@@ -9,5 +9,6 @@ glibc pipcet git@github.com:pipcet/glibc
 musl upstream https://github.com/bminor/musl
 ncurses upstream https://github.com/mirror/ncurses
 wabt upstream https://github.com/webassembly/wabt
+zsh-code pipcet git@github.com:pipcet/zsh-code
 zsh-code upstream https://git.code.sf.net/p/zsh/code
 
