@@ -11,6 +11,7 @@ pipcet gnulib git@github.com:pipcet/gnulib
 pipcet graphviz git@github.com:pipcet/graphviz
 pipcet harfbuzz git@github.com:pipcet/harfbuzz
 pipcet libtool git@github.com:pipcet/libtool
+pipcet magit git@github.com:pipcet/magit
 pipcet make git@github.com:pipcet/make
 pipcet musl git@github.com:pipcet/musl
 pipcet ncurses git@github.com:pipcet/ncurses
@@ -32,6 +33,7 @@ upstream gnulib git://git.sv.gnu.org/gnulib.git
 upstream graphviz https://gitlab.com/graphviz/graphviz
 upstream harfbuzz https://github.com/harfbuzz/harfbuzz
 upstream libtool git://git.savannah.gnu.org/libtool.git
+upstream magit https://github.com/magit/magit
 upstream make https://github.com/mirror/make
 upstream musl https://github.com/bminor/musl
 upstream ncurses https://github.com/mirror/ncurses

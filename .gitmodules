@@ -37,6 +37,9 @@
 [submodule "harfbuzz"]
 	path = harfbuzz
 	url = https://github.com/pipcet/harfbuzz
+[submodule "magit"]
+	path = magit
+	url = https://github.com/pipcet/magit
 [submodule "make"]
 	path = make
 	url = https://github.com/pipcet/make
