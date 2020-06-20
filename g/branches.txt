@@ -1,0 +1,5 @@
+binutils-gdb wasm pipcet/wasm
+binaryen wasm pipcet/wasm
+gcc wasm pipcet/wasm
+glibc wasm pipcet/wasm
+zsh-code wasm pipcet/wasm

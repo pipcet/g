@@ -1,0 +1,4 @@
+#!/bin/bash
+cat g/branches.txt | while read dir name remote; do
+    (cd $dir; git checkout $remote; git checkout -b $name);
+done
