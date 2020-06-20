@@ -1,4 +1,4 @@
 #!/bin/bash
-cat remotes.txt | while read name path url; do
+cat g/remotes.txt | while read name path url; do
     (cd $path; git remote add $name $url);
 done

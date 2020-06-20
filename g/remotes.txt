@@ -1,11 +1,15 @@
+pipcet bash git@github.com:pipcet/bash./
 pipcet binaryen git@github.com:pipcet/binaryen
 pipcet binutils-gdb git@github.com:pipcet/binutils-gdb
 pipcet gcc git@github.com:pipcet/gcc
 pipcet glibc git@github.com:pipcet/glibc
 pipcet make git@github.com:pipcet/gcc
+pipcet wasm git@github.com:pipcet/wasm
 pipcet zsh-code git@github.com:pipcet/zsh-code
-upstream binaryen git@github.com:WebAssembly/binaryen
+upstream asmjs https://github.com/pipcet/asmjs
+upstream bash https://github.com/bminor/bash
 upstream binutils-gdb git://sourceware.org/git/binutils-gdb.git
+upstream coreutils git://git.sv.gnu.org/coreutils.git
 upstream gcc git://gcc.gnu.org/git/gcc.git
 upstream glibc git://sourceware.org/git/glibc.git
 upstream make https://github.com/mirror/make
