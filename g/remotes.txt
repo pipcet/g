@@ -1,0 +1,13 @@
+binaryen pipcet git@github.com:pipcet/binaryen
+binaryen upstream git@github.com:WebAssembly/binaryen
+binutils-gdb upstream git://sourceware.org/git/binutils-gdb.git
+binutils-gdb pipcet git@github.com:pipcet/binutils-gdb
+gcc upstream git://gcc.gnu.org/git/gcc.git
+gcc pipcet git@github.com:pipcet/gcc
+glibc upstream git://sourceware.org/git/glibc.git
+glibc pipcet git@github.com:pipcet/glibc
+musl upstream https://github.com/bminor/musl
+ncurses upstream https://github.com/mirror/ncurses
+wabt upstream https://github.com/webassembly/wabt
+zsh-code upstream https://git.code.sf.net/p/zsh/code
+
