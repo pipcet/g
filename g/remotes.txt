@@ -1,10 +1,10 @@
-pipcet bash git@github.com:pipcet/bash./
+pipcet bash git@github.com:pipcet/bash
 pipcet binaryen git@github.com:pipcet/binaryen
 pipcet binutils-gdb git@github.com:pipcet/binutils-gdb
 pipcet coreutils git@github.com:pipcet/coreutils
 pipcet coreutils/gnulib git@github.com:pipcet/gnulib
 pipcet emacs git@github.com:pipcet/emacs
-pipcet file git@github.com:pipcet/filec
+pipcet file git@github.com:pipcet/file
 pipcet gcc git@github.com:pipcet/gcc
 pipcet glibc git@github.com:pipcet/glibc
 pipcet gnulib git@github.com:pipcet/gnulib
