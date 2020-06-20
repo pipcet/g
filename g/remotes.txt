@@ -16,8 +16,10 @@ pipcet make git@github.com:pipcet/make
 pipcet musl git@github.com:pipcet/musl
 pipcet ncurses git@github.com:pipcet/ncurses
 pipcet spikwid git@github.com:pipcet/spikwid
+pipcet transient git@github.com:pipcet/transient
 pipcet wabt git@github.com:pipcet/wabt
 pipcet wasm git@github.com:pipcet/wasm
+pipcet with-editor git@github.com:pipcet/with-editor
 pipcet zsh git@github.com:pipcet/zsh-code
 upstream asmjs https://github.com/pipcet/asmjs
 upstream bash https://github.com/bminor/bash
@@ -38,6 +40,8 @@ upstream make https://github.com/mirror/make
 upstream musl https://github.com/bminor/musl
 upstream ncurses https://github.com/mirror/ncurses
 upstream spikwid https://github.com/pipcet/spikwid
+upstream transient https://github.com/magit/transient
 upstream wabt https://github.com/webassembly/wabt
 upstream wasm https://github.com/pipcet/wasm
+upstream with-editor https://github.com/magit/with-editor
 upstream zsh https://git.code.sf.net/p/zsh/code

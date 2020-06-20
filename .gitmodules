@@ -61,3 +61,12 @@
 [submodule "zsh"]
 	path = zsh
 	url = https://github.com/pipcet/zsh
+[submodule "transient"]
+	path = transient
+	url = https://github.com/pipcet/transient
+[submodule "with-editor"]
+	path = with-editor
+	url = https://github.com/pipcet/with-editor
+[submodule "libegit2"]
+	path = libegit2
+	url = https://github.com/pipcet/libegit2
