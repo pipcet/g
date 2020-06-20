@@ -1,4 +1,4 @@
 #!/bin/bash
 cat g/remotes.txt | while read name path url; do
-    (cd $path; git remote add $name $url);
+    (cd $path; git remote add $name $url || git remote remove $name && git remote add $name $url);
 done
