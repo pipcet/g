@@ -1,3 +1,57 @@
+[submodule "asmjs"]
+	path = asmjs
+	url = https://github.com/pipcet/asmjs
+[submodule "bash"]
+	path = bash
+	url = https://github.com/pipcet/bash
+[submodule "binaryen"]
+	path = binaryen
+	url = https://github.com/pipcet/binaryen
+[submodule "binutils-gdb"]
+	path = binutils-gdb
+	url = https://github.com/pipcet/binutils-gdb
+[submodule "coreutils"]
+	path = coreutils
+	url = https://github.com/pipcet/coreutils
+[submodule "file"]
+	path = file
+	url = https://github.com/pipcet/file
+[submodule "gcc"]
+	path = gcc
+	url = https://github.com/pipcet/gcc
+[submodule "glibc"]
+	path = glibc
+	url = https://github.com/pipcet/glibc
+[submodule "libtool"]
+	path = libtool
+	url = https://github.com/pipcet/libtool
+[submodule "emacs"]
+	path = emacs
+	url = https://github.com/pipcet/emacs
+[submodule "gnulib"]
+	path = gnulib
+	url = https://github.com/pipcet/gnulib
+[submodule "graphviz"]
+	path = graphviz
+	url = https://github.com/pipcet/graphviz
+[submodule "harfbuzz"]
+	path = harfbuzz
+	url = https://github.com/pipcet/harfbuzz
+[submodule "make"]
+	path = make
+	url = https://github.com/pipcet/make
+[submodule "musl"]
+	path = musl
+	url = https://github.com/pipcet/musl
+[submodule "ncurses"]
+	path = ncurses
+	url = https://github.com/pipcet/ncurses
+[submodule "spikwid"]
+	path = spikwid
+	url = https://github.com/pipcet/spikwid
+[submodule "wabt"]
+	path = wabt
+	url = https://github.com/pipcet/wabt
 [submodule "wasm"]
 	path = wasm
 	url = https://github.com/pipcet/wasm
