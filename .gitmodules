@@ -55,6 +55,6 @@
 [submodule "wasm"]
 	path = wasm
 	url = https://github.com/pipcet/wasm
-[submodule "zsh-code"]
-	path = zsh-code
-	url = https://github.com/pipcet/zsh-code
+[submodule "zsh"]
+	path = zsh
+	url = https://github.com/pipcet/zsh

@@ -17,7 +17,7 @@ pipcet ncurses git@github.com:pipcet/ncurses
 pipcet spikwid git@github.com:pipcet/spikwid
 pipcet wabt git@github.com:pipcet/wabt
 pipcet wasm git@github.com:pipcet/wasm
-pipcet zsh-code git@github.com:pipcet/zsh-code
+pipcet zsh git@github.com:pipcet/zsh-code
 upstream asmjs https://github.com/pipcet/asmjs
 upstream bash https://github.com/bminor/bash
 upstream binaryen https://github.com/WebAssembly/binaryen
@@ -38,4 +38,4 @@ upstream ncurses https://github.com/mirror/ncurses
 upstream spikwid https://github.com/pipcet/spikwid
 upstream wabt https://github.com/webassembly/wabt
 upstream wasm https://github.com/pipcet/wasm
-upstream zsh-code https://git.code.sf.net/p/zsh/code
+upstream zsh https://git.code.sf.net/p/zsh/code
