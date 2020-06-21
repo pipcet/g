@@ -2,6 +2,7 @@ bash pipcet wasm
 binaryen pipcet wasm
 binutils-gdb pipcet wasm
 coreutils pipcet wasm
+dumbmakefs pipcet master
 emacs pipcet wasm
 file pipcet wasm
 gcc pipcet wasm

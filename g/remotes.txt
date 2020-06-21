@@ -19,6 +19,10 @@ pipcet spikwid git@github.com:pipcet/spikwid
 pipcet transient git@github.com:pipcet/transient
 pipcet wabt git@github.com:pipcet/wabt
 pipcet wasm git@github.com:pipcet/wasm
+pipcet wasm/subrepos/binutils-gdb git@github.com:pipcet/binutils-gdb
+pipcet wasm/subrepos/gcc git@github.com:pipcet/gcc
+pipcet wasm/subrepos/glibc git@github.com:pipcet/glibc
+pipcet wasm/subrepos/wabt git@github.com:pipcet/wabt
 pipcet with-editor git@github.com:pipcet/with-editor
 pipcet zsh git@github.com:pipcet/zsh-code
 upstream asmjs https://github.com/pipcet/asmjs
@@ -27,6 +31,7 @@ upstream binaryen https://github.com/WebAssembly/binaryen
 upstream binutils-gdb git://sourceware.org/git/binutils-gdb.git
 upstream coreutils git://git.sv.gnu.org/coreutils.git
 upstream coreutils/gnulib git://git.sv.gnu.org/gnulib.git
+upstream dumbmakefs https://github.com/pipcet/dumbmakefs
 upstream emacs https://git.savannah.gnu.org/git/emacs.git
 upstream file https://github.com/file/file
 upstream gcc git://gcc.gnu.org/git/gcc.git
@@ -44,5 +49,9 @@ upstream spikwid https://github.com/mozilla/gecko-dev
 upstream transient https://github.com/magit/transient
 upstream wabt https://github.com/webassembly/wabt
 upstream wasm https://github.com/pipcet/wasm
+upstream wasm/subrepos/binaryen https://github.com/WebAssembly/binaryen
+upstream wasm/subrepos/binutils-gdb git://sourceware.org/git/binutils-gdb.git
+upstream wasm/subrepos/gcc git://gcc.gnu.org/git/gcc.git
+upstream wasm/subrepos/glibc git://sourceware.org/git/glibc.git
 upstream with-editor https://github.com/magit/with-editor
 upstream zsh https://git.code.sf.net/p/zsh/code
