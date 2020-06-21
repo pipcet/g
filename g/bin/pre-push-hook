@@ -1,0 +1,28 @@
+#!/usr/bin/perl
+system("git remote | egrep '^pipcet$'") && exit 0;
+my $sm_path = $ENV{sm_path};
+my $toplevel = $ENV{toplevel};
+my $fh;
+my $branch;
+my $remote;
+while (<>) {
+    chomp;
+    my ($subrepo, $r, $b) = split / /;
+    if ($subrepo eq $sm_path) {
+	$branch = $b;
+	$remote = $r;
+	last;
+    }
+}
+
+if ($branch) {
+    if (`git rev-parse ${remote}/${branch}` eq `git rev-parse HEAD`) {
+	exit 0;
+    }
+    system("git push ${remote} ${branch}");
+    if (`git rev-parse ${remote}/${branch}` eq `git rev-parse HEAD`) {
+	exit 0;
+    }
+}
+
+die "unpushed changes in $sm_path";
