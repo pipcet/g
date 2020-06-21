@@ -1,8 +1,7 @@
 #!/usr/bin/perl
-system("git remote | egrep '^pipcet$'") && exit 0;
+system("git remote | egrep '^pipcet\$'") && exit 0;
 my $sm_path = $ENV{sm_path};
 my $toplevel = $ENV{toplevel};
-die $sm_path;
 my $fh;
 my $branch;
 my $remote;
