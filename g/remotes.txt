@@ -34,12 +34,13 @@ upstream glibc git://sourceware.org/git/glibc.git
 upstream gnulib git://git.sv.gnu.org/gnulib.git
 upstream graphviz https://gitlab.com/graphviz/graphviz
 upstream harfbuzz https://github.com/harfbuzz/harfbuzz
+upstream libegit2 https://github.com/magit/libegit2
 upstream libtool git://git.savannah.gnu.org/libtool.git
 upstream magit https://github.com/magit/magit
 upstream make https://github.com/mirror/make
 upstream musl https://github.com/bminor/musl
 upstream ncurses https://github.com/mirror/ncurses
-upstream spikwid https://github.com/pipcet/spikwid
+upstream spikwid https://github.com/mozilla/gecko-dev
 upstream transient https://github.com/magit/transient
 upstream wabt https://github.com/webassembly/wabt
 upstream wasm https://github.com/pipcet/wasm
