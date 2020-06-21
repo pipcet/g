@@ -12,7 +12,6 @@ for my $remote (@remotes) {
 	my $prefix = substr($remote, $i);
 	if (exists $remotes{$prefix}) {
 	    system("(cd $prefix; git remote add " . $remotes{$prefix}{name} . " " . $remotes{$prefix}{url} . ")");
-	    last;
 	}
     }
 }
