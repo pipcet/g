@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-git submodule foreach perl '$toplevel/g/bin/pre-push-hook' '$toplevel/g/push-branches.txt'
+git submodule foreach perl "$toplevel/g/bin/pre-push-hook" "$toplevel/g/push-branches.txt"
