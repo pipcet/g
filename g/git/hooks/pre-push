@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 toplevel=$(git rev-parse --show-superproject-working-tree)
-#if [ x"$toplevel" != "" ]; then
-#    (cd "$toplevel"; git push);
-#fi
-git submodule foreach 'if [ -e $toplevel/g/bin/pre-push-hook ]; then $toplevel/g/bin/pre-push-hook $toplevel/g/push-branches.txt; else :; fi'
+if [ x"$IN_RECURSIVE_PUSH" = x ] && [ x"$toplevel" != "" ]; then
+    (cd "$toplevel"; git push);
+fi
+IN_RECURSIVE_PUSH=1 git submodule foreach 'if [ -e $toplevel/g/bin/pre-push-hook ]; then $toplevel/g/bin/pre-push-hook $toplevel/g/push-branches.txt; else :; fi'

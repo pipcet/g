@@ -15,6 +15,7 @@ make pipcet master
 musl pipcet wasm
 ncurses pipcet wasm
 spikwid pipcet master
+spikwid pipcet wasm
 transient pipcet master
 wabt pipcet wasm
 wasm pipcet master

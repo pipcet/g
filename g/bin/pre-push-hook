@@ -16,15 +16,15 @@ while (<>) {
 }
 
 if ($branch) {
-    if (`git rev-parse ${remote}/${branch}` eq `git rev-parse HEAD`) {
+    if (`git rev-parse ${remote}/${branch}` eq `git rev-parse ${branch}`) {
 	exit 0;
     }
-    system("git push ${remote} ${branch}");
-    if (`git rev-parse ${remote}/${branch}` eq `git rev-parse HEAD`) {
+    system("IN_RECURSIVE_PUSH=1 git push ${remote} ${branch}:${branch}");
+    if (`git rev-parse ${remote}/${branch}` eq `git rev-parse ${branch}`) {
 	exit 0;
     }
 
-    die "unpushed changes in $sm_path";
+    die "unpushed changes in ${sm_path}, remote ${remote}, branch ${branch}";
 }
 
 die "no branch configured for $sm_path";
