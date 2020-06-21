@@ -23,6 +23,9 @@ if ($branch) {
     if (`git rev-parse ${remote}/${branch}` eq `git rev-parse HEAD`) {
 	exit 0;
     }
+
+    die "unpushed changes in $sm_path";
 }
 
-die "unpushed changes in $sm_path";
+die "no branch configured for $sm_path";
+
