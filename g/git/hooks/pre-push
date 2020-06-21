@@ -1,3 +1,2 @@
 #!/usr/bin/bash
-# find .git -name hooks | while read; do ln -sf -r git/hooks/pre-push "$REPLY"/pre-push; done
-git submodule foreach --recursive '$toplevel/g/bin/pre-push-hook $toplevel/g/push-branches.txt'
+git submodule foreach '${toplevel}/g/bin/pre-push-hook ${toplevel}/g/push-branches.txt'
