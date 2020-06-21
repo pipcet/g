@@ -1,6 +1,10 @@
 #!/usr/bin/bash
 toplevel=$(git rev-parse --show-superproject-working-tree)
-if [ x"$IN_RECURSIVE_PUSH" = x ] && [ x"$toplevel" != "" ]; then
-    (cd "$toplevel"; git push);
+if [ x"$IN_RECURSIVE_PUSH" = x ] && [ x"$toplevel" != x ]; then
+    # do not add IN_RECURSIVE_PUSH=1 here, we want to make it to the
+    # toplevel (confusingly, $toplevel is only the immediate parent's
+    # toplevel)
+    echo "Recursing into $toplevel"
+    (cd "$toplevel"; git push || exit 1)
 fi
 IN_RECURSIVE_PUSH=1 git submodule foreach 'if [ -e $toplevel/g/bin/pre-push-hook ]; then $toplevel/g/bin/pre-push-hook $toplevel/g/push-branches.txt; else :; fi'

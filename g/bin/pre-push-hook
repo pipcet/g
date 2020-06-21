@@ -27,5 +27,5 @@ if ($branch) {
     die "unpushed changes in ${sm_path}, remote ${remote}, branch ${branch}";
 }
 
-die "no branch configured for $sm_path";
+die "no branch configured for ${sm_path}";
 
