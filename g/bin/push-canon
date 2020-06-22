@@ -1,4 +1,4 @@
 #!/bin/bash -x
 cat g/canonical.txt | while read dir canon branch; do
-    (cd $dir && [ $(git branch --show-current) = $branch ] && git push canon $branch) && (cd $canon; [ $(git branch --show-current) = $branch ] && git reset --soft)
+    (cd $dir && [ $(git branch --show-current) = $branch ] && git push canon $branch) && (cd $canon; [ $(git branch --show-current) = $branch ] && git reset --hard)
 done
