@@ -53,4 +53,8 @@ while ($msg ne "" && $oldmsg ne "" && substr ($oldmsg, 0, 1) ne "#") {
     $oldmsg = substr ($oldmsg, 1);
 }
 
+if ($oldmsg =~ /^#/) {
+    $oldmsg = "\n\n$oldmsg";
+}
+
 write_file($commit_msg_file, "$msg" . "$oldmsg");
