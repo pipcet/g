@@ -35,6 +35,6 @@ cat $toptoplevel/g/canonical.txt | while read path canon branch; do
     fi
     if [ $path = $subsubrepo ]; then
 	git push canon $branch:$branch
-	(cd $toptoplevel/$canon; $toptoplevel/g/bin/post-commit)
+	(cd $toptoplevel/$canon; git checkout $branch; $toptoplevel/g/bin/post-commit)
     fi
 done
