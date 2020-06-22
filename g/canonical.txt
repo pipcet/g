@@ -1,18 +1,18 @@
-asmjs/subrepos/bash bash
-asmjs/subrepos/binaryen binaryen
-asmjs/subrepos/binutils-gdb binutils-gdb
-asmjs/subrepos/emacs emacs
-asmjs/subrepos/gcc gcc
-asmjs/subrepos/glibc glibc
-asmjs/subrepos/libtool libtool
-asmjs/subrepos/ncurses ncurses
-asmjs/subrepos/wabt wabt
-wasm/subrepos/bash bash
-wasm/subrepos/binaryen binaryen
-wasm/subrepos/binutils-gdb binutils-gdb
-wasm/subrepos/emacs emacs
-wasm/subrepos/gcc gcc
-wasm/subrepos/glibc glibc
-wasm/subrepos/libtool libtool
-wasm/subrepos/ncurses ncurses
-wasm/subrepos/wabt wabt
+asmjs/subrepos/bash bash asmjs
+asmjs/subrepos/binaryen binaryen asmjs
+asmjs/subrepos/binutils-gdb binutils-gdb asmjs
+asmjs/subrepos/emacs emacs asmjs
+asmjs/subrepos/gcc gcc asmjs
+asmjs/subrepos/glibc glibc asmjs
+asmjs/subrepos/libtool libtool asmjs
+asmjs/subrepos/ncurses ncurses asmjs
+asmjs/subrepos/wabt wabt asmjs
+wasm/subrepos/bash bash wasm
+wasm/subrepos/binaryen binaryen wasm
+wasm/subrepos/binutils-gdb binutils-gdb wasm
+wasm/subrepos/emacs emacs wasm
+wasm/subrepos/gcc gcc wasm
+wasm/subrepos/glibc glibc wasm
+wasm/subrepos/libtool libtool wasm
+wasm/subrepos/ncurses ncurses wasm
+wasm/subrepos/wabt wabt wasm
