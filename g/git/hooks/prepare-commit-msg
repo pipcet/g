@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+exit if $ENV{GIT_MSG};
 my $commit_msg_file = shift;
 my $commit_source = shift;
 my $sha1 = shift;
