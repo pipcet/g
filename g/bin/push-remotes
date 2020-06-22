@@ -1,5 +1,5 @@
 #!/bin/bash -x
 tac g/push-branches.txt | while read canon remote branch; do
-    (cd $canon && git push $remote $branch:$branch)
+    (cd $canon && git diff -q $remote/$branch $branch || git push $remote $branch:$branch)
 done
 exit 0
