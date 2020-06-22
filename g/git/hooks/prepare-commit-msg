@@ -49,4 +49,7 @@ my $oldmsg = read_file($commit_msg_file);
 if (substr($oldmsg, 0, length $msg) eq $msg) {
     $msg = "";
 }
-write_file($commit_msg_file, "$msg" . read_file($commit_msg_file));
+while ($oldmsg ne "" && substr ($oldmsg, 0, 1) ne "#") {
+    $oldmsg = substr ($oldmsg, 1);
+}
+write_file($commit_msg_file, "$msg" . "\n$oldmsg");
