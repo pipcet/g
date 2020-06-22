@@ -3,7 +3,7 @@
 
 all!: daily!
 
-daily!: fetch-canon! fetch-upstream! fetch-canon!
+daily!: fetch-canon! fetch-all! fetch-canon!
 
 fetch-canon!:
 	g/bin/fetch-canon
