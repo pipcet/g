@@ -8,4 +8,4 @@ subrepo="$(echo $toplevel | cut -c $((2 + $(echo -n "$super_toplevel" | wc -c)))
 echo "subrepo $subrepo" > /dev/stderr
 msg="$(git log -1 --pretty='%s (%H)'; git log -1 --pretty='%b')"
 cd "$super_toplevel"
-(unset GIT_DIR; unset GIT_INDEX_FILE; git commit --allow-empty -m "$subrepo: $msg" -- $subrepo)
+(unset GIT_DIR; unset GIT_INDEX_FILE; git commit -m "$subrepo: $msg" -- $subrepo)
