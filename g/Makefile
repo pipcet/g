@@ -25,3 +25,7 @@ remotes!:
 
 find-canonical!:
 	g/bin/find-canonical
+
+list-remotes!:
+	git remote -v show
+	git submodule foreach --recursive git remote -v show
