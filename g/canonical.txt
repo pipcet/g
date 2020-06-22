@@ -1,0 +1,9 @@
+wasm/subrepos/bash bash
+wasm/subrepos/binaryen binaryen
+wasm/subrepos/binutils-gdb binutils-gdb
+wasm/subrepos/emacs emacs
+wasm/subrepos/gcc gcc
+wasm/subrepos/glibc glibc
+wasm/subrepos/libtool glibc
+wasm/subrepos/ncurses ncurses
+wasm/subrepos/wabt wabt
