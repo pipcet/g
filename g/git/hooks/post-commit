@@ -18,7 +18,7 @@ msg="$(git log -1 --pretty='%s (%H)'; git log -1 --pretty='%b')"
 cd "$super_toplevel"
 (unset GIT_DIR; unset GIT_INDEX_FILE; git commit -m "$subrepo: $msg" -- $subrepo)
 if [ x$IN_RECURSIVE_COMMIT != x ]; then
-    exit 0
+    : # exit 0
 fi
 subsubrepo="$(echo $toplevel | cut -c $((2 + $(echo -n "$toptoplevel" | wc -c)))-)"
 echo "subsubrepo $subsubrepo" > /dev/stderr
@@ -35,6 +35,6 @@ cat $toptoplevel/g/canonical.txt | while read path canon branch; do
     fi
     if [ $path = $subsubrepo ]; then
 	git push canon $branch:$branch
-	(cd $toptoplevel/$canon; unset GIT_DIR; unset GIT_INDEX_FILE; git checkout $branch; $toptoplevel/g/bin/post-commit)
+	(cd $toptoplevel/$canon; unset GIT_DIR; unset GIT_INDEX_FILE; git checkout $branch; $toptoplevel/g/git/hooks/post-commit)
     fi
 done
