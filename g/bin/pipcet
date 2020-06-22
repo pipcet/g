@@ -2,3 +2,4 @@
 git submodule foreach --recursive git config user.name 'Pip Cet'
 git submodule foreach --recursive git config user.email 'pipcet@gmail.com'
 git submodule foreach --recursive git config pull.rebase false
+git submodule foreach --recursive git config receive.denyCurrentBranch ignore
