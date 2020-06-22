@@ -2,3 +2,4 @@
 cat g/push-branches.txt | while read canon remote branch; do
     (cd $canon && git push $remote $branch:$branch && git fetch --all)
 done
+exit 0
