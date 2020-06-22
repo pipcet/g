@@ -8,4 +8,7 @@ if [ x"$IN_RECURSIVE_PUSH" = x ] && [ x"$toplevel" != x ]; then
     # (cd "$toplevel"; git push || exit 1)
     :
 fi
-IN_RECURSIVE_PUSH=1 git submodule foreach 'if [ -e $toplevel/g/bin/pre-push-hook ]; then $toplevel/g/bin/pre-push-hook $toplevel/g/push-branches.txt; else :; fi'
+[ -e g/canonical.txt ] && IN_RECURSIVE_PUSH=1 g/bin/push-canon
+[ -e g/remotes.txt ] && IN_RECURSIVE_PUSH=1 g/bin/push-remotes
+# [ -e g/canonical.txt ] && IN_RECURSIVE_PUSH=1 g/bin/fetch-canon
+# [ -e g/remotes.txt ] && IN_RECURSIVE_PUSH=1 g/bin/fetch-upstream

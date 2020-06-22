@@ -1,10 +1,7 @@
-asmjs/subrepos/bash bash asmjs
 asmjs/subrepos/binaryen binaryen asmjs
 asmjs/subrepos/binutils-gdb binutils-gdb asmjs
-asmjs/subrepos/emacs emacs asmjs
 asmjs/subrepos/gcc gcc asmjs
 asmjs/subrepos/glibc glibc asmjs
-asmjs/subrepos/libtool libtool asmjs
 asmjs/subrepos/ncurses ncurses asmjs
 asmjs/subrepos/wabt wabt asmjs
 wasm/subrepos/bash bash wasm
