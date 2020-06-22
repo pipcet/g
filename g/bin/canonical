@@ -1,5 +1,10 @@
 #!/bin/bash
 cat g/canonical.txt | while read clone canon; do
     pwd=$(pwd)
-    (cd $clone; git remote add canon $pwd/$canon)
+    echo $clone
+    (cd $clone && git remote add canon $pwd/$canon)
+    (cd $clone && git remote remove origin)
+    (cd $clone && git remote remove pipcet)
+    (cd $clone && git remote remove upstream)
+    (cd $clone && git push --set-upstream canon $(git branch --show-current))
 done
