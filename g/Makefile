@@ -1,0 +1,27 @@
+# This is in the g/ subdir of the g repository, but it's meant to be
+# run in the repository itself, as make -f g/Makefile daily!
+
+all!: daily!
+
+daily!: fetch-canon! fetch-upstream! fetch-canon!
+
+fetch-canon!:
+	g/bin/fetch-canon
+
+fetch-upstream!:
+	g/bin/fetch-upstream
+
+install-hooks!:
+	g/bin/install-hooks
+
+pipcet!:
+	g/bin/pipcet
+
+pull!:
+	g/bin/pull
+
+remotes!:
+	g/bin/remotes
+
+find-canonical!:
+	g/bin/find-canonical
