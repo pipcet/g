@@ -29,3 +29,8 @@ find-canonical!:
 list-remotes!:
 	git remote -v show
 	git submodule foreach --recursive git remote -v show
+
+g/remotes.mk: g/remotes.txt g/bin/remotes-mk
+	g/bin/remotes-mk > $@
+
+include g/remotes.mk
