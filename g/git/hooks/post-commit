@@ -1,6 +1,6 @@
 #!/bin/bash -x
 if [ x"$GIT_MSG" = x ]; then
-    GIT_MSG="$(git log -1 --pretty='%s (%H)'; git log -1 --pretty='%b')"
+    GIT_MSG="$(git log -1 --pretty='%s (%H)'; echo; git log -1 --pretty='%b')"
 fi
 toplevel="$(git rev-parse --show-toplevel)"
 super_toplevel="$(git rev-parse --show-superproject-working-tree)"
