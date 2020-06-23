@@ -76,3 +76,6 @@
 [submodule "dumbmakefs"]
 	path = dumbmakefs
 	url = https://github.com/pipcet/dumbmakefs
+[submodule "mischacks"]
+	path = mischacks
+	url = https://github.com/pipcet/mischacks

@@ -13,6 +13,7 @@ harfbuzz pipcet master
 libtool pipcet wasm
 magit pipcet master
 make pipcet master
+mischacks pipcet master
 musl pipcet wasm
 ncurses pipcet wasm
 spikwid pipcet master
