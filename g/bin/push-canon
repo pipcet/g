@@ -1,9 +1,16 @@
 #!/bin/bash -x
 pwd=$(pwd)
+EXIT=0
 cat g/canonical.txt | while read dir canon branch; do
+    canonhead=$(cd $canon; git rev-parse $branch)
     (cd $dir && [ $(git branch --show-current) = $branch ] && git push canon $branch) || continue
-    for secondarydir in $canon $(cat g/canonical.txt | while read dir2 canon2 branch2; do if [ $canon = $canon2 ] && [ $dir != $dir2 ]; then echo $dir2; fi; done); do
-	(cd $secondarydir; $pwd/g/bin/post-commit);
-    done
-    (cd $canon; $pwd/g/git/hooks/post-commit; [ $(git branch --show-current) = $branch ] && git reset --hard)
+    if [ $(cd $canon; git rev-parse $branch) != $canonhead ]; then
+	for secondarydir in $canon $(cat g/canonical.txt | while read dir2 canon2 branch2; do if [ $canon = $canon2 ] && [ $dir != $dir2 ]; then echo $dir2; fi; done); do
+	    (cd $secondarydir; $pwd/g/bin/post-commit);
+	done
+	(cd $canon; $pwd/g/git/hooks/post-commit; [ $(git branch --show-current) = $branch ] && git reset --hard)
+	EXIT=1
+    fi
 done
+
+exit $EXIT
