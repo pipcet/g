@@ -8,8 +8,8 @@ cat g/canonical.txt | while read dir canon branch; do
     fi
     (cd $dir && [ $(git branch --show-current) = $branch ] && git push canon $branch) || continue
     if [ $(cd $canon; git rev-parse $branch) != $canonhead ]; then
-	for secondarydir in $canon $(cat g/canonical.txt | while read dir2 canon2 branch2; do if [ $canon = $canon2 ] && [ $dir != $dir2 ]; then echo $dir2; fi; done); do
-	    (cd $secondarydir; $pwd/g/bin/post-commit);
+	for secondarydir in $canon $(cat g/canonical.txt | while read dir2 canon2 branch2; do if [ $canon = $canon2 ] && [ $branch = $branch2 ] && [ $dir != $dir2 ]; then echo $dir2; fi; done); do
+	    (cd $secondarydir; git pull canon $branch); # XXX temporary branches
 	done
 	(cd $canon; $pwd/g/git/hooks/post-commit; [ $(git branch --show-current) = $branch ] && git reset --hard)
 	EXIT=1
