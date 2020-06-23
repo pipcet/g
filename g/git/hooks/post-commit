@@ -18,7 +18,8 @@ fi
 subrepo="$(echo $toplevel | cut -c $((2 + $(echo -n "$super_toplevel" | wc -c)))-)"
 echo "subrepo $subrepo" > /dev/stderr
 cd "$super_toplevel"
-(unset GIT_DIR; unset GIT_INDEX_FILE; GIT_MSG="$subrepo: $GIT_MSG" git commit -m "$GIT_MSG" -- $subrepo)
+GIT_MSG="$subrepo: $GIT_MSG"
+(unset GIT_DIR; unset GIT_INDEX_FILE; GIT_MSG="$GIT_MSG" git commit -m "$GIT_MSG" -- $subrepo)
 if [ x$IN_RECURSIVE_COMMIT != x ]; then
     : # exit 0
 fi
