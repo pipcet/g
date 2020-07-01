@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 tac g/push-branches.txt | while read canon remote branch; do
     (cd $canon && git diff --quiet $remote/$branch $branch || git push $remote $branch:$branch)
 done
