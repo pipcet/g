@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/bash -x
 toplevel=$(git rev-parse --show-superproject-working-tree)
 if [ x"$IN_RECURSIVE_PUSH" = x ] && [ x"$toplevel" != x ]; then
     # do not add IN_RECURSIVE_PUSH=1 here, we want to make it to the
