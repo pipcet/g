@@ -79,3 +79,6 @@
 [submodule "mischacks"]
 	path = mischacks
 	url = https://github.com/pipcet/mischacks
+[submodule "perl"]
+	path = perl
+	url = https://github.com/pipcet/perl
