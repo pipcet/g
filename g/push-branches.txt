@@ -16,8 +16,7 @@ make pipcet master
 mischacks pipcet master
 musl pipcet wasm
 ncurses pipcet wasm
-spikwid pipcet master
-spikwid pipcet wasm
+spikwid pipcet spikwid
 transient pipcet master
 wabt pipcet wasm
 wasm pipcet master
