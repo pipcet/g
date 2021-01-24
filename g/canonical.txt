@@ -25,4 +25,5 @@ asmjs/subrepos/glibc glibc asmjs
 wasm/subrepos/gcc gcc wasm
 asmjs/subrepos/gcc gcc asmjs
 wasm/subrepos/coreutils coreutils wasm
+wasm/subrepos/zsh zsh wasm
 dumbmakefs/dumbmake make dumbmake
