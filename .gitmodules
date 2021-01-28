@@ -82,3 +82,6 @@
 [submodule "perl"]
 	path = perl
 	url = https://github.com/pipcet/perl
+[submodule "python"]
+	path = python
+	url = https://github.com/pipcet/python
