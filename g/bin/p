@@ -1,4 +1,7 @@
 #!/bin/bash
+while ! [ -e .git/FETCH_HEAD ]; do
+    cd ..
+done
 while ! git push; do
     true
 done
