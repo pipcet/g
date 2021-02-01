@@ -1,0 +1,6 @@
+#!/bin/bash
+git fetch --all -j 64
+git submodule foreach --recursive 'git fetch --all'
+tac g/upstream-branches.txt | while read canon branch; do
+    (cd $canon && git push self upstream/$branch:upstream)
+done

@@ -4,11 +4,11 @@ map { chomp } @remotes;
 my %remotes = ();
 for my $line (`cat g/remotes.txt`) {
     chomp $line;
-    my ($name, $path, $url) = split / /, $line;
+    my ($name, $path, $url) = split " ", $line;
     $remotes{$path} = { name => $name, url => $url };
 }
-for my $remote (@remotes) {
-    for my $i (0 .. length ($remote) - 1) {
+for my $remote (keys %remotes) {
+    for my $i (0 .. length ($remote)) {
 	my $prefix = substr($remote, $i);
 	if (exists $remotes{$prefix}) {
 	    system("(cd $prefix; git remote add " . $remotes{$prefix}{name} . " " . $remotes{$prefix}{url} . ")");
