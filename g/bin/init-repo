@@ -1,0 +1,9 @@
+#!/bin/bash -x
+git submodule update --init --recursive --progress --remote
+git submodule foreach --recursive 'git remote remove origin || :'
+./g/bin/canonical
+./g/bin/install-hooks
+./g/bin/pipcet
+./g/bin/remotes
+./g/bin/storage2
+./g/bin/storage
