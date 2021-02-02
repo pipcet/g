@@ -1,4 +1,7 @@
 #!/bin/bash
+while ! [ -e .git/FETCH_HEAD ]; do
+    cd ..
+done
 git fetch --no-tags --all -j 64
 git submodule foreach --recursive 'git fetch --all --no-tags'
 tac g/upstream-branches.txt | while read canon branch; do
