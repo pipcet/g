@@ -1,6 +1,6 @@
 #!/bin/bash
-git fetch --all -j 64
-git submodule foreach --recursive 'git fetch --all'
+git fetch --no-tags --all -j 64
+git submodule foreach --recursive 'git fetch --all --no-tags'
 tac g/upstream-branches.txt | while read canon branch; do
-    (cd $canon && git push self upstream/$branch:upstream)
+    (cd $canon && git push self upstream/$branch:refs/heads/upstream)
 done
