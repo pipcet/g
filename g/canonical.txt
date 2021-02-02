@@ -1,13 +1,3 @@
-asmjs/subrepos/binaryen binaryen asmjs
-asmjs/subrepos/binutils-gdb binutils-gdb asmjs
-asmjs/subrepos/gcc gcc asmjs
-asmjs/subrepos/glibc glibc asmjs
-asmjs/subrepos/musl musl asmjs
-asmjs/subrepos/ncurses ncurses asmjs
-asmjs/subrepos/wabt wabt HEAD
-asmjs/subrepos/wabt/third_party/gtest wabt/third_party/gtest HEAD
-asmjs/subrepos/wabt/third_party/ply wabt/third_party/ply HEAD
-asmjs/subrepos/wabt/third_party/testsuite wabt/third_party/testsuite HEAD
 coreutils/gnulib gnulib wasm
 dumbmakefs/dumbmake make dumbmake
 libtool/gnulib gnulib HEAD
