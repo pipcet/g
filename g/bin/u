@@ -1,5 +1,5 @@
 #!/bin/bash
-while ! [ -e .git/FETCH_HEAD ]; do
+while ! [ -d .git ]; do
     cd ..
 done
 git fetch --no-tags --all -j 64
