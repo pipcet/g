@@ -1,8 +1,3 @@
-asmjs/binaryen wasm pipcet/wasm
-asmjs/binutils-gdb wasm pipcet/wasm
-asmjs/gcc wasm pipcet/wasm
-asmjs/glibc wasm pipcet/wasm
-asmjs/zsh-code wasm pipcet/wasm
 binaryen wasm pipcet/wasm
 binutils-gdb wasm pipcet/wasm
 gcc wasm pipcet/wasm
