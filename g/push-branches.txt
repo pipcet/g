@@ -17,6 +17,7 @@ mischacks pipcet master
 musl pipcet wasm
 ncurses pipcet wasm
 perl pipcet wasm
+python pipcet wasm
 spikwid pipcet spikwid
 transient pipcet master
 wabt pipcet wasm
