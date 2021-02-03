@@ -1,0 +1,14 @@
+bash wasm
+binaryen wasm
+binutils-gdb wasm
+coreutils wasm
+file wasm
+gcc wasm
+glibc wasm
+ncurses wasm
+perl wasm
+python wasm
+spikwid spikwid
+wabt wasm
+wasm master
+zsh wasm

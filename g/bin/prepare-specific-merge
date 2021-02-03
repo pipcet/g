@@ -1,0 +1,10 @@
+#!/bin/bash
+git worktree add --detach $TMPDIR $BRANCH &&
+    (cd $TMPDIR; git branch -D merge || true) &&
+    (cd $TMPDIR; git checkout -b merge) &&
+    (cd $TMPDIR; git merge --no-commit upstream) &&
+    (cd $TMPDIR; git commit -m merge) &&
+    echo successful
+git worktree remove --force $TMPDIR &&
+    rm -rf $TMPDIR
+
