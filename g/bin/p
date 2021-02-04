@@ -1,5 +1,5 @@
 #!/bin/bash
-while ! [ -e .git/FETCH_HEAD ]; do
+while [ x"$(basename $(pwd))" != xg ] || ! [ -d g ]; do
     cd ..
 done
 while ! git push; do

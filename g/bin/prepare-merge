@@ -1,5 +1,5 @@
 #!/bin/bash
-while ! [ -d .git ]; do
+while [ x"$(basename $(pwd))" != xg ] || ! [ -d g ]; do
     cd ..
 done
 rm -rf tmp
