@@ -1,5 +1,3 @@
-coreutils/gnulib gnulib wasm
-libtool/gnulib gnulib HEAD
 wasm/subrepos/bash bash wasm
 wasm/subrepos/binaryen binaryen wasm
 wasm/subrepos/binutils-gdb binutils-gdb wasm
