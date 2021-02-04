@@ -1,5 +1,4 @@
 coreutils/gnulib gnulib wasm
-dumbmakefs/dumbmake make dumbmake
 libtool/gnulib gnulib HEAD
 wasm/subrepos/bash bash wasm
 wasm/subrepos/binaryen binaryen wasm
