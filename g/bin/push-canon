@@ -2,7 +2,7 @@
 pwd=$(pwd)
 EXIT=0
 cat g/canonical.txt | while read dir canon branch; do
-    canonhead=$(cd $canon; git GIT_DIR=.git rev-parse $branch)
+    canonhead=$(cd $canon; GIT_DIR=.git git rev-parse $branch)
     if [ $(cd $dir; GIT_DIR=.git git rev-parse HEAD) = $canonhead ]; then
 	continue
     fi
