@@ -2,16 +2,16 @@
 pwd=$(pwd)
 EXIT=0
 cat g/canonical.txt | while read dir canon branch; do
-    canonhead=$(cd $canon; git rev-parse $branch)
-    if [ $(cd $dir; git rev-parse HEAD) = $canonhead ]; then
+    canonhead=$(cd $canon; git GIT_DIR=.git rev-parse $branch)
+    if [ $(cd $dir; GIT_DIR=.git git rev-parse HEAD) = $canonhead ]; then
 	continue
     fi
-    (cd $dir && [ x"$(git branch --show-current)" = x"$branch" ] && git push canon $branch) || continue
-    if [ $(cd $canon; git rev-parse $branch) != $canonhead ]; then
+    (cd $dir && [ x"$(GIT_DIR=.git git branch --show-current)" = x"$branch" ] && git push canon $branch) || continue
+    if [ $(cd $canon; GIT_DIR=.git git rev-parse $branch) != $canonhead ]; then
 	for secondarydir in $canon $(cat g/canonical.txt | while read dir2 canon2 branch2; do if [ $canon = $canon2 ] && [ $branch = $branch2 ] && [ $dir != $dir2 ]; then echo $dir2; fi; done); do
-	    (cd $secondarydir; git pull canon $branch); # XXX temporary branches
+	    (cd $secondarydir; GIT_DIR=.git git pull canon $branch); # XXX temporary branches
 	done
-	(cd $canon; $pwd/g/git/hooks/post-commit; [ $(git branch --show-current) = $branch ] && git reset --hard)
+	(cd $canon; $pwd/g/git/hooks/post-commit; [ $(GIT_DIR=.git git branch --show-current) = $branch ] && GIT_DIR=.git git reset --hard)
 	EXIT=1
     fi
 done
