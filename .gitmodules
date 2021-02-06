@@ -85,3 +85,6 @@
 [submodule "python"]
 	path = python
 	url = https://github.com/pipcet/python
+[submodule "gmp"]
+	path = gmp
+	url = ./gmp/
