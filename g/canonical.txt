@@ -3,6 +3,7 @@ wasm/subrepos/binaryen binaryen wasm
 wasm/subrepos/binutils-gdb binutils-gdb wasm
 wasm/subrepos/coreutils coreutils wasm
 wasm/subrepos/emacs emacs wasm
+wasm/subrepos/emacs-native-comp emacs wasm-native-comp
 wasm/subrepos/gcc gcc wasm
 wasm/subrepos/glibc glibc wasm
 wasm/subrepos/libtool libtool wasm

@@ -4,6 +4,7 @@ binutils-gdb pipcet wasm
 coreutils pipcet wasm
 dumbmakefs pipcet master
 emacs pipcet wasm
+emacs pipcet wasm-native-comp
 file pipcet wasm
 gcc pipcet wasm
 glibc pipcet wasm
