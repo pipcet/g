@@ -91,3 +91,6 @@
 [submodule "mpc"]
 	path = mpc
 	url = https://github.com/pipcet/mpc
+[submodule "mpfr"]
+	path = mpfr
+	url = https://github.com/pipcet/mpfr
