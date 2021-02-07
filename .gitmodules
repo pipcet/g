@@ -88,3 +88,6 @@
 [submodule "gmp"]
 	path = gmp
 	url = https://github.com/pipcet/gmp
+[submodule "mpc"]
+	path = mpc
+	url = https://github.com/pipcet/mpc
