@@ -22,6 +22,6 @@ python pipcet wasm
 spikwid pipcet spikwid
 transient pipcet master
 wabt pipcet wasm
-wasm pipcet master
 with-editor pipcet master
 zsh pipcet wasm
+wasm pipcet master
