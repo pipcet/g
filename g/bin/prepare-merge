@@ -5,5 +5,5 @@ done
 rm -rf tmp
 WD=$(pwd)
 cat g/merge-branches.txt | while read REPO BRANCH; do
-    (cd $REPO && TMPDIR=$WD/tmp BRANCH=$BRANCH $WD/g/bin/prepare-specific-merge)
+    (cd $REPO && REPO=$REPO TMPDIR=$WD/tmp BRANCH=$BRANCH $WD/g/bin/prepare-specific-merge)
 done
