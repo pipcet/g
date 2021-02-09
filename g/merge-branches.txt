@@ -10,5 +10,4 @@ perl wasm
 python wasm
 spikwid spikwid
 wabt wasm
-wasm master
 zsh wasm
