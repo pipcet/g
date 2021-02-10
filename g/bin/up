@@ -2,6 +2,10 @@
 while [ x"$(basename $(pwd))" != xg ] || ! [ -d g ]; do
     cd ..
 done
+./g/bin/install-hooks
+while ! ./g/bin/install-remotes < g/remotes.txt; do
+    sleep 1;
+done
 git fetch --no-tags --all -j 64
 git submodule foreach --recursive 'git fetch --all --no-tags'
 tac g/upstream-branches.txt | while read canon branch; do
