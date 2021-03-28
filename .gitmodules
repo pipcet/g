@@ -97,3 +97,9 @@
 [submodule "zlib"]
 	path = zlib
 	url = https://github.com/pipcet/zlib
+[submodule "syncfs"]
+	path = syncfs
+	url = https://github.com/pipcet/syncfs
+[submodule "linux"]
+	path = linux
+	url = https://github.com/pipcet/linux
